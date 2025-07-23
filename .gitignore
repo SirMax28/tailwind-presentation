@@ -5,7 +5,11 @@ node_modules/
 # Build outputs
 dist/
 build/
-assets/output.css
+# assets/output.css  <- Comentado porque SÍ necesitamos este archivo para GitHub Pages
+
+# Development files (no needed in production)
+input.css
+tailwind.config.js
 
 # Environment variables
 .env
