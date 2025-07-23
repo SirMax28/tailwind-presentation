@@ -4,23 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto de Tailwind</title>
-    <link rel="stylesheet" href="./assets/output.css">
+    <link rel="stylesheet" href="./assets/output.css" />
   </head>
-  <body class="max-w-xl mx-auto 
-   min-h-dvh 
-   bg-gradient-to-b from-background via-background-secondary to-sky-950">
+  <body
+    class="max-w-xl mx-auto min-h-dvh bg-gradient-to-b from-background via-background-secondary to-sky-950"
+  >
     <header class="text-white">
-      <img src="assets/profile-pic.jpg" alt="profile-pic"
-      class="h-[500px] object-cover mask-radial-[100%_101%] mask-radial-from-70% mask-radial-at-top"
-      >
-      <header class="flex flex-col justify-center items-center">
-        <span class="text-sky-100 font-mono px-3 py-1 border rounded-full flex items-center justify-center shadow-md bg-background-secondary/90 cursor-crosshair hover:bg-button transition-colors">
-            @SamuelSteven28
+      <img
+        src="assets/profile-pic.jpg"
+        alt="profile-pic"
+        class="h-[500px] object-cover mask-radial-[100%_101%] mask-radial-from-70% mask-radial-at-top"
+      />
+      <div class="flex flex-col justify-center items-center">
+        <span
+          class="text-sky-100 font-mono px-3 py-1 border rounded-full flex items-center justify-center shadow-md bg-background-secondary/90 cursor-crosshair hover:bg-button transition-colors"
+        >
+          @SamuelSteven28
         </span>
         <h1 class="text-center text-3xl font-extrabold leading-tight mt-1">
-            Samuel Steven Bernal
+          Samuel Steven Bernal
         </h1>
-      </header>
+      </div>
       <!-- Icons from sprite.svg -->
       <div class="flex justify-center gap-4 mt-6">
         <a
@@ -58,33 +62,114 @@
         </a>
       </div>
       <p class="text-center mt-4 text-sm px-4 text-balance">
-        Este es un mini-proyecto realizado en base a un curso y la documentación de Tailwind 4.1 CSS que muestra un diseño moderno y responsivo. Utiliza componentes reutilizables y es fácil de personalizar.
+        Este es un mini-proyecto realizado en base a un curso y la documentación
+        de Tailwind 4.1 CSS que muestra un diseño moderno y responsivo. Utiliza
+        componentes reutilizables y es fácil de personalizar.
       </p>
-    
-    <main class="pt-4">
-        <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
-          <a href="#" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-900 via-orange-700 to-orange-500
-            border border-orange-900
-            flex flex-col items-start
-            hover:scale-105 hover:contrast-125
-            transition
-            col-span-2 p-7 min-h-[180px]">
-            <span class="absolute bottom-2 left-2 font-bold text-2xl">HTML</span>
-
-            <svg class="absolute -right-4 -bottom-4 size-32" width="100" height="100">
-              <use href="assets/sprite.svg#html-logo"></use>
-            </svg>
-
-            <span class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5 text-white">
-              Maquetación
-            </span>
-          </a>
-        </div>
-      </main>
     </header>
+
+    <main class="pt-4 px-4 pb-16">
+      <div class="grid grid-cols-3 grid-rows-2 gap-2.5 w-full">
+        <a
+          href="#"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-900 via-orange-700 to-orange-500 border border-orange-500/30 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-2 p-7 min-h-[180px]"
+        >
+          <span
+            class="absolute bottom-4 left-4 font-bold text-2xl text-white group-hover:opacity-100 group-hover:-translate-y-1 transition-transform"
+            >HTML</span
+          >
+
+          <svg
+            class="absolute -right-2 -bottom-2 size-28 opacity-80 group-hover:opacity-100 group-hover:scale-3d transition-transform"
+            width="100"
+            height="100"
+          >
+            <use href="assets/sprite.svg#html-logo"></use>
+          </svg>
+
+          <span
+            class="absolute top-4 left-4 text-xs border border-white/30 rounded-xl px-2 py-1 text-white bg-black/20 backdrop-blur-sm group-hover:scale-105 transition-transform"
+          >
+            Maquetación
+          </span>
+        </a>
+
+        <a
+          href="#"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-css-dark via-css-medium to-css-light border border-css-light/30 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group p-7 min-h-[180px]"
+        >
+          <span
+            class="absolute bottom-4 left-4 font-bold text-2xl text-white group-hover:opacity-100 group-hover:-translate-y-1 transition-transform"
+            >CSS</span
+          >
+
+          <svg
+            class="absolute right-2 bottom-2 size-20 opacity-90 text-white drop-shadow-lg group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+            width="100"
+            height="100"
+          >
+            <use href="assets/sprite.svg#css-logo"></use>
+          </svg>
+
+          <span
+            class="absolute top-4 left-4 text-xs border border-white/30 rounded-xl px-2 py-1 text-white bg-black/20 backdrop-blur-sm group-hover:scale-105 transition-transform"
+          >
+            Estilos
+          </span>
+        </a>
+
+        <a
+          href="#"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-js-dark via-js-medium to-js-light border border-js-light/30 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group p-7 min-h-[180px]"
+        >
+          <span
+            class="absolute bottom-4 left-4 font-bold text-2xl text-white group-hover:opacity-100 group-hover:-translate-y-1 transition-transform"
+            >JS</span
+          >
+
+          <svg
+            class="absolute right-2 bottom-2 size-20 opacity-90 text-gray-800 drop-shadow-lg group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+            width="100"
+            height="100"
+          >
+            <use href="assets/sprite.svg#js-logo"></use>
+          </svg>
+
+          <span
+            class="absolute top-4 left-4 text-xs border border-white/30 rounded-xl px-2 py-1 text-white bg-black/20 backdrop-blur-sm group-hover:scale-105 transition-transform"
+          >
+            Interactividad
+          </span>
+        </a>
+        <a
+          href="#"
+          class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-tailwind-dark via-tailwind-medium to-tailwind-light border border-tailwind-light/30 flex flex-col items-start hover:scale-105 hover:contrast-125 transition group col-span-2 p-7 min-h-[180px]"
+        >
+          <span
+            class="absolute bottom-4 left-4 font-bold text-2xl text-white group-hover:opacity-100 group-hover:-translate-y-1 transition-transform"
+            >Tailwind</span
+          >
+
+          <svg
+            class="absolute right-2 bottom-2 size-20 opacity-90 text-white drop-shadow-lg group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
+            width="100"
+            height="100"
+          >
+            <use href="assets/sprite.svg#tailwind-logo"></use>
+          </svg>
+
+          <span
+            class="absolute top-4 left-4 text-xs border border-white/30 rounded-xl px-2 py-1 text-white bg-black/20 backdrop-blur-sm group-hover:scale-105 transition-transform"
+          >
+            Framework CSS
+          </span>
+        </a>
+      </div>
+    </main>
+
     <footer class="mt-10 text-center">
-      <p class="text-sm">
-        © 2023 Mi Proyecto de Tailwind. Todos los derechos reservados.
+      <p class="text-sm text-white">
+        © 2025 Mi Proyecto de Tailwind .
       </p>
     </footer>
   </body>
