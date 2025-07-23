@@ -51,7 +51,6 @@
     --color-js-dark: #f57c00;
     --color-js-medium: #ffd600;
     --color-js-light: #fff176;
-    --breakpoint-xs: 350px;
   }
 }
 @layer base {
@@ -251,13 +250,12 @@
   .grid {
     display: grid;
   }
+  .hidden {
+    display: none;
+  }
   .size-10 {
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
-  }
-  .size-16 {
-    width: calc(var(--spacing) * 16);
-    height: calc(var(--spacing) * 16);
   }
   .size-20 {
     width: calc(var(--spacing) * 20);
@@ -303,23 +301,11 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
-  }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-x-2\.5 {
-    column-gap: calc(var(--spacing) * 2.5);
-  }
-  .gap-y-2\.5 {
-    row-gap: calc(var(--spacing) * 2.5);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -495,9 +481,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -670,6 +653,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .mobile\:block {
+    @media (width >= 480px) {
+      display: block;
+    }
+  }
 }
 .social-button {
   display: flex;
@@ -690,7 +678,7 @@
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
-  @media (width >= 350px) {
+  @media (width >= 480px) {
     width: calc(var(--spacing) * 12);
     height: calc(var(--spacing) * 12);
   }

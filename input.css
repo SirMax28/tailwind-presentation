@@ -21,10 +21,11 @@
   --color-js-medium: #ffd600;
   --color-js-light: #fff176;
 
-  /*Breakpoints*/
+  /* Custom Breakpoints */
   --breakpoint-xs: 350px;
+  --breakpoint-mobile: 480px;
 }
 
 .social-button {
-  @apply p-2 size-10 xs:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+  @apply p-2 size-10 mobile:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
 }
