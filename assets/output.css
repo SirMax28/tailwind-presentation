@@ -51,6 +51,7 @@
     --color-js-dark: #f57c00;
     --color-js-medium: #ffd600;
     --color-js-light: #fff176;
+    --breakpoint-xs: 350px;
   }
 }
 @layer base {
@@ -249,6 +250,10 @@
   }
   .grid {
     display: grid;
+  }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
   }
   .size-16 {
     width: calc(var(--spacing) * 16);
@@ -475,6 +480,9 @@
   .object-cover {
     object-fit: cover;
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-7 {
     padding: calc(var(--spacing) * 7);
   }
@@ -631,6 +639,16 @@
       }
     }
   }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:bg-button {
     &:hover {
       @media (hover: hover) {
@@ -644,6 +662,12 @@
         --tw-contrast: contrast(125%);
         filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
       }
+    }
+  }
+  .xs\:size-12 {
+    @media (width >= 350px) {
+      width: calc(var(--spacing) * 12);
+      height: calc(var(--spacing) * 12);
     }
   }
 }
