@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-background: #ff9ba1;
+    --color-background-secondary: #6867ae;
+    --color-button: #ac3037;
+
+    /*Breakpoints*/
+    --breakpoint-xs: 350px
+}
+
+.social-button {
+    @apply p-2 size-10 xs:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto de Tailwind</title>
+    <link rel="stylesheet" href="./assets/output.css">
+  </head>
+  <body class="max-w-xl mx-auto 
+   min-h-dvh 
+   bg-gradient-to-b from-background via-background-secondary to-sky-950">
+    <header class="text-white">
+      <img src="assets/profile-pic.jpg" alt="profile-pic"
+      class="h-[500px] object-cover mask-radial-[100%_101%] mask-radial-from-70% mask-radial-at-top"
+      >
+      <header class="flex flex-col justify-center items-center">
+        <span class="text-sky-100 font-mono px-3 py-1 border rounded-full flex items-center justify-center shadow-md bg-background-secondary/90 cursor-crosshair hover:bg-button transition-colors">
+            @SamuelSteven28
+        </span>
+        <h1 class="text-center text-3xl font-extrabold leading-tight mt-1">
+            Samuel Steven Bernal
+        </h1>
+      </header>
+      <!-- Icons from sprite.svg -->
+      <div class="flex justify-center gap-4 mt-6">
+        <a
+          class="bg-red-100 social-button"
+          href="https://www.youtube.com"
+          target="_blank"
+          aria-label="YouTube"
+          title="Ir a YouTube"
+        >
+          <svg width="28" height="28">
+            <use href="assets/sprite.svg#youtube-logo"></use>
+          </svg>
+        </a>
+        <a
+          class="bg-blue-100 social-button"
+          href="https://www.twitter.com"
+          target="_blank"
+          aria-label="Twitter"
+          title="Ir a Twitter"
+        >
+          <svg width="28" height="28">
+            <use href="assets/sprite.svg#twitter-logo"></use>
+          </svg>
+        </a>
+        <a
+          class="bg-pink-100 social-button"
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Instagram"
+          title="Ir a Instagram"
+        >
+          <svg width="28" height="28">
+            <use href="assets/sprite.svg#instagram-logo"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="text-center mt-4 text-sm px-4 text-balance">
+        Este es un mini-proyecto realizado en base a un curso y la documentación de Tailwind 4.1 CSS que muestra un diseño moderno y responsivo. Utiliza componentes reutilizables y es fácil de personalizar.
+      </p>
+    
+    <main class="pt-4">
+        <div class="grid grid-cols-3 grid-rows-2 gap-2 w-full">
+          <a href="#" class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-orange-900 via-orange-700 to-orange-500
+            border border-orange-900
+            flex flex-col items-start
+            hover:scale-105 hover:contrast-125
+            transition
+            col-span-2 p-7 min-h-[180px]">
+            <span class="absolute bottom-2 left-2 font-bold text-2xl">HTML</span>
+
+            <svg class="absolute -right-4 -bottom-4 size-32" width="100" height="100">
+              <use href="assets/sprite.svg#html-logo"></use>
+            </svg>
+
+            <span class="absolute top-2 left-2 text-xs border rounded-xl px-1 py-0.5 text-white">
+              Maquetación
+            </span>
+          </a>
+        </div>
+      </main>
+    </header>
+    <footer class="mt-10 text-center">
+      <p class="text-sm">
+        © 2023 Mi Proyecto de Tailwind. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
